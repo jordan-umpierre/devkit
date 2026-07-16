@@ -1,0 +1,37 @@
+{
+  "name": "devkit",
+  "version": "1.0.0",
+  "description": "Zero-dependency TypeScript CLI: expression calculator, streaming text stats, and unit conversion.",
+  "type": "module",
+  "bin": {
+    "devkit": "dist/src/cli.js"
+  },
+  "files": [
+    "dist/src"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "pretest": "npm run build",
+    "test": "node --test \"test/*.test.ts\""
+  },
+  "keywords": [
+    "cli",
+    "calculator",
+    "parser",
+    "stats",
+    "unit-conversion"
+  ],
+  "author": "Jordan Umpierre",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "prettier": "^3.6.0",
+    "typescript": "^5.9.0"
+  }
+}
