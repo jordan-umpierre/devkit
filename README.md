@@ -9,6 +9,11 @@ I/O, and machine-readable output — without hiding anything behind packages.
 and Node type definitions. Expressions are parsed by a real tokenizer and
 recursive-descent parser; `eval`, `Function`, and shell execution are never used.
 
+![Terminal demo of devkit: calc evaluates expressions and JSON output, stats reads stdin, convert converts 100 °C to 212 °F, and division by zero fails with exit code 1](demo.gif)
+
+The same commands appear as copyable text in [Usage](#usage) below. The GIF is
+reproducible with [vhs](https://github.com/charmbracelet/vhs): `vhs demo.tape`.
+
 ## Install
 
 Requires Node.js 22 or later.
