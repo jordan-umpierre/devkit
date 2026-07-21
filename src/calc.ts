@@ -14,7 +14,7 @@ function isDigit(ch: string): boolean {
   return ch >= "0" && ch <= "9";
 }
 
-export function tokenize(input: string): Token[] {
+function tokenize(input: string): Token[] {
   const tokens: Token[] = [];
   let i = 0;
   while (i < input.length) {
